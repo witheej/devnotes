@@ -29,6 +29,10 @@ The user account (SID).
 
 <span style="font-size:32px">`This is some code that I want to display large`</span>
 
+<span style="font-size:32px; font-weight:bold">`This is some code that I want to display large`</span>
+
+<span style="font-size:32px">`This is ``**some code**`` that I want to display large`</span>
+
 <span style="font-size:32px">This is some `code` that I want to display large</span>
 
 #### `<app_directory>`
