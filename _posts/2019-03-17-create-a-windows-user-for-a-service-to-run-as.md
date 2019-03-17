@@ -23,11 +23,11 @@ Grant read/write/execute permission to the user for the app's folder
 
     icacls "<appdirectory>" /grant <user_account>:<permission_flags> /t
 
-#### `<user_account>`
+# `<user_account>`
 
 The user account (SID).
 
-#### `<app_directory>`
+## `<app_directory>`
 
 The path of the folder containing the app.
 
