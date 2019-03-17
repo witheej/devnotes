@@ -23,15 +23,15 @@ Grant read/write/execute permission to the user for the app's folder
 
     icacls "<appdirectory>" /grant <user_account>:<permission_flags> /t
 
-<span style="font-size:32px">`<user_account>`</span>
+<span style="font-size:24px; font-weight:bold;">`<user_account>`</span>
 
 The user account (SID).
 
-<span style="font-size:32px">`<app_directory>`</span>
+<span style="font-size:24px; font-weight:bold;">`<app_directory>`</span>
 
 The path of the folder containing the app.
 
-<span style="font-size:32px">`<permission_flags>`</span>
+<span style="font-size:24px; font-weight:bold;">`<permission_flags>`</span>
 
 Sets the access permissions.
 
@@ -43,7 +43,8 @@ Sets the access permissions.
 * (F): Full
 * (M): Modify
 
-#### `/t`
+<span style="font-size:24px; font-weight:bold;">`/t`</span>
+<span style="font-size:24px;">**`/t`**</span>
 
 Apply recursively to existing subordinate folders and files.
 
@@ -57,26 +58,26 @@ Create the service and assign the user to it (Note: the space after each "=" is 
 
     sc create <service_name> binPath= "<executable_path>" obj= "<domain>\<user_account>" password= "<password>"
 
-#### `sc`
+<span style="font-size:24px; font-weight:bold;">`sc`</span>
 
 Execute the sc.exe command-line tool.
 
-#### `<service_name>`
+<span style="font-size:24px; font-weight:bold;">`<service_name>`</span>
 
 The name to assign to the service in Service Control Manager.
 
-#### `<executable_path>`
+<span style="font-size:24px; font-weight:bold;">`<executable_path>`</span>
 
 The path of the service executable.
 
-#### `<domain>`
+<span style="font-size:24px; font-weight:bold;">`<domain>`</span>
 
 The domain of a domain-joined machine. If the machine isn't domain-joined, the local machine name.
 
-#### `<user_account>`
+<span style="font-size:24px; font-weight:bold;">`<user_account>`</span>
 
 The user account under which the service runs.
 
-#### `<password>`
+<span style="font-size:24px; font-weight:bold;">`<password>`</span>
 
 The user account password.
