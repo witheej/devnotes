@@ -23,25 +23,17 @@ Grant read/write/execute permission to the user for the app's folder
 
     icacls "<appdirectory>" /grant <user_account>:<permission_flags> /t
 
-#### `<user_account>`
+<span style="font-size:32px">`<user_account>`</span>
 
 The user account (SID).
 
-<span style="font-size:32px">`This is some code that I want to display large`</span>
-
-<span style="font-size:32px; font-weight:bold">`This is some code that I want to display large`</span>
-
-<span style="font-size:32px">`This is ``**some code**`` that I want to display large`</span>
-
-<span style="font-size:32px">This is some `code` that I want to display large</span>
-
-#### `<app_directory>`
+<span style="font-size:32px">`<app_directory>`</span>
 
 The path of the folder containing the app.
 
-#### `<permission_flags>`
+<span style="font-size:32px">`<permission_flags>`</span>
 
-# Sets th`e acc`ess permissions.
+Sets the access permissions.
 
 * (OI): The Object Inherit flag propagates permissions to subordinate files
 * (CI): The Container Inherit flag propagates permissions to subordinate folders
