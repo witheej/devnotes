@@ -47,7 +47,7 @@ Sets the access permissions.
 
 Apply recursively to existing subordinate folders and files.
 
-Example
+**Example:**
 
     icacls "C:/myAppFolder/" /grant AppUser:(OI)(CI)(F) /t
 
