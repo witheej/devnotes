@@ -23,15 +23,15 @@ Grant read/write/execute permission to the user for the app's folder
 
     icacls "<appdirectory>" /grant <user_account>:<permission_flags> /t
 
-### <user_account>
+#### `<user_account>`
 
 The user account (SID).
 
-#### <app_directory>
+#### `<app_directory>`
 
 The path of the folder containing the app.
 
-#### <permission_flags>
+#### `<permission_flags>`
 
 Sets the access permissions.
 
@@ -43,7 +43,7 @@ Sets the access permissions.
 * (F): Full
 * (M): Modify
 
-#### /t
+#### `/t`
 
 Apply recursively to existing subordinate folders and files.
 
@@ -57,26 +57,26 @@ Create the service and assign the user to it (Note: the space after each "=" is 
 
     sc create <service_name> binPath= "<executable_path>" obj= "<domain>\<user_account>" password= "<password>"
 
-#### sc
+#### `sc`
 
 Execute the sc.exe command-line tool.
 
-#### <service_name>
+#### `<service_name>`
 
 The name to assign to the service in Service Control Manager.
 
-#### <executable_path>
+#### `<executable_path>`
 
 The path of the service executable.
 
-#### <domain>
+#### `<domain>`
 
 The domain of a domain-joined machine. If the machine isn't domain-joined, the local machine name.
 
-#### <user_account>
+#### `<user_account>`
 
 The user account under which the service runs.
 
-#### <password>
+#### `<password>`
 
-The user account password. 
+The user account password.
