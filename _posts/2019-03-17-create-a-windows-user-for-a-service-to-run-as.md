@@ -44,9 +44,6 @@ Sets the access permissions.
 * (M): Modify
 
 <span style="font-size:24px; font-weight:bold;">`/t`</span>
-<span style="font-size:24px;">`**/t**`</span>
-
-<span style="font-size:24px;">`**/t**`</span>
 
 Apply recursively to existing subordinate folders and files.
 
