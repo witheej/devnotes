@@ -27,6 +27,10 @@ Grant read/write/execute permission to the user for the app's folder
 
 The user account (SID).
 
+<span style="font-size:32px">`This is some code that I want to display large`</span>
+
+<span style="font-size:32px">This is some `code` that I want to display large</span>
+
 #### `<app_directory>`
 
 The path of the folder containing the app.
