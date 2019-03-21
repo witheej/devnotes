@@ -1,7 +1,8 @@
 ---
 layout: post
-title: ASP.NET Core 2.2 - Add a DbContext
-sub_heading: ''
+title: ASP.NET Core 2.x - Add a DbContext
+sub_heading: Add an Entity Framework Core DbContext to an existing ASP.NET Core 2.x
+  project
 date: 2019-03-21 00:00:00 -0400
 tags:
 - Entity Framework Core
