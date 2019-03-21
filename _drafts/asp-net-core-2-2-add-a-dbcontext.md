@@ -22,14 +22,33 @@ Tasks:
 7. Startup.cs
 8. Code-First Migration
 
-I like to put this in a folder named "Data" at the root of my project.
+Entity models
+
+Example
+
+    using System.ComponentModel.DataAnnotations;
+    
+    namespace MyProject.Models
+    {
+        public class Customer
+        {
+            [Key]
+            public long CustomerId { get; set; }
+            public string Name { get; set; }
+            public DateTime? FirstPurchaseDate { get; set; }
+        }
+    }
+
+Read about the `[Key]` annotation and others [here](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=netcore-2.2)
+
+I like to put my context class in a folder named "Data" at the root of my project.
 
 Install NuGet packages
 
     <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.2" />
 
-Create DbContext class
+Create your context class that inherits from [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-2.1)
 
     using Microsoft.EntityFrameworkCore;
     using MyProject.Models;
@@ -82,3 +101,11 @@ Update Startup.cs
         
         }
     }
+
+Verify appsettings.json connection string (the database it points to doesn't need to exist)
+
+Example
+
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
+      }
