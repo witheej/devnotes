@@ -55,7 +55,7 @@ Update Startup.cs
     using System;
     using MyProject.Data;
     
-    namespace UserManagementPortal
+    namespace MyProject
     {
         public class Startup
         {
