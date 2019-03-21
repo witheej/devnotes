@@ -43,10 +43,12 @@ Read about the `[Key]` annotation and others [here](https://docs.microsoft.com/e
 
 I like to put my context class in a folder named "Data" at the root of my project.
 
-Install NuGet packages
+Install NuGet packages (the Identity packages are only necessary if your app is managing identities, I think)
 
-    <PackageReference Include="EntityFramework" Version="6.2.0" />
-    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
 
 Create your context class that inherits from [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-2.1)
 
@@ -102,9 +104,7 @@ Update Startup.cs
         }
     }
 
-Verify appsettings.json connection string (the database it points to doesn't need to exist)
-
-Example
+Example appsettings.json connection string (the database it points to doesn't need to exist)
 
     "ConnectionStrings": {
         "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
