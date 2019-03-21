@@ -11,20 +11,18 @@ banner_image: ''
 related_posts: []
 
 ---
-Tasks:
+Index:
 
-1. Create entity classes
+1. Example entity model
 2. Install NuGet packages
-3. Create DbContext class
-4. 
-5. Initializer
-6. Connection string
-7. Startup.cs
-8. Code-First Migration
+3. Create context class
+4. Update Startup.cs
+5. Example connection string
+6. Add-Migration
+7. Update-Database
+8. Seed data
 
-Entity models
-
-Example
+Example entity model
 
     using System.ComponentModel.DataAnnotations;
     
@@ -41,8 +39,6 @@ Example
 
 Read about the `[Key]` annotation and others [here](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=netcore-2.2)
 
-I like to put my context class in a folder named "Data" at the root of my project.
-
 Install NuGet packages (the Identity packages are only necessary if your app is managing identities, I think)
 
     <PackageReference Include="Microsoft.AspNetCore.App" />
@@ -50,7 +46,7 @@ Install NuGet packages (the Identity packages are only necessary if your app is 
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
 
-Create your context class that inherits from [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-2.1)
+Create your context class that inherits from [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-2.1).  I like to put my context class in a folder named "Data" at the root of my project.
 
     using Microsoft.EntityFrameworkCore;
     using MyProject.Models;
@@ -69,7 +65,7 @@ Create your context class that inherits from [DbContext](https://docs.microsoft.
         }
     }
 
-Update Startup.cs
+Call `services.AddDbContext<>(...);` in Startup.cs
 
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
@@ -104,8 +100,14 @@ Update Startup.cs
         }
     }
 
-Example appsettings.json connection string (the database it points to doesn't need to exist)
+Example appsettings.json connection string (the database it points to doesn't need to exist, but the connection string needs to exist for `Add-Migration` to work )
 
     "ConnectionStrings": {
         "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
-      }
+     }
+
+TODO: Add-Migration
+
+TODO: Update-Database
+
+TODO: Initialization code, like seed data
