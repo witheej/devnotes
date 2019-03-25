@@ -2,7 +2,7 @@
 layout: post
 title: Timeline
 sub_heading: A timeline of events that I sometimes want to reference
-date: 2019-03-25 00:00:00 -0400
+date: 2019-03-24 00:00:00 -0400
 tags:
 - Timeline
 banner_image: ''
