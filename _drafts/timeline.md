@@ -15,10 +15,10 @@ related_posts: []
 * 2018 May 30 - .NET Core 2.1
 * 2018 Dec 4 - .NET Core 2.2
 
-    2016 Jun 27 - .NET Core 1.0
-    2016 Nov 16 - .NET Core 1.1
-    2017 Aug 14 - .NET Core 2.0
-    2018 May 30 - .NET Core 2.1
-    2018 Dec  4 - .NET Core 2.2
+      2016 Jun 27 - .NET Core 1.0
+      2016 Nov 16 - .NET Core 1.1
+      2017 Aug 14 - .NET Core 2.0
+      2018 May 30 - .NET Core 2.1
+      2018 Dec  4 - .NET Core 2.2
 
 [.NET Core Release Lifecycles](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
