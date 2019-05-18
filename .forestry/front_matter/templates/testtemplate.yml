@@ -1,6 +1,7 @@
 ---
 label: testtemplate
 hide_body: false
+display_field: put_some_text_here
 fields:
 - name: put_some_text_here
   type: text
