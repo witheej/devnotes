@@ -1,4 +1,9 @@
 ---
 label: testtemplate
 hide_body: false
-fields: []
+fields:
+- name: put_some_text_here
+  type: text
+  config:
+    required: false
+  label: Put some text here
