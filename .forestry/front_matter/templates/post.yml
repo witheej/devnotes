@@ -39,9 +39,9 @@ fields:
   hidden: true
   default: post
 pages:
-- _posts/thwarting-viruses.md
-- _posts/timeline.md
-- _posts/asp-net-core-2-x-signalr-implementation-walkthrough.md
-- _posts/2019-03-21-asp-net-core-2-2-add-a-dbcontext.md
-- _posts/managing-client-side-libraries-in-asp-net-core-2-2.md
 - _posts/2019-03-17-create-a-windows-user-for-a-service-to-run-as.md
+- _posts/timeline.md
+- _posts/thwarting-viruses.md
+- _posts/2019-03-21-asp-net-core-2-2-add-a-dbcontext.md
+- _posts/asp-net-core-2-x-signalr-implementation-walkthrough.md
+- _posts/managing-client-side-libraries-in-asp-net-core-2-2.md
